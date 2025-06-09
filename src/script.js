@@ -160,7 +160,7 @@ let tocadiscosFinal = null;
 
 let close = null;
 
-gltfLoader.load('/models/tocadiscos/tocadiscosclose.glb', (gltf) => {
+gltfLoader.load('/models_compressed/tocadiscos/tocadiscosclose_draco.glb', (gltf) => {
     gltf.scene.scale.set(6.5, 6.5, 6.5)
     gltf.scene.position.y = 5
     tocadiscosClose = gltf.scene
@@ -170,7 +170,7 @@ gltfLoader.load('/models/tocadiscos/tocadiscosclose.glb', (gltf) => {
 let mixer = null
 
 gltfLoader.load(
-    '/models/tocadiscos/tocadiscosfinal.glb',
+    '/models_compressed/tocadiscos/tocadiscosfinal_draco.glb',
     (gltf) =>
     {
         gltf.scene.scale.set(6.5, 6.5, 6.5)
@@ -193,7 +193,7 @@ let animacionEjecutada = false;
 let viniloPivot = new THREE.Group(); // Grupo que rotará
 
 scene.add(viniloPivot); 
-gltfLoader.load('/models/vinil/discovinilo.gltf', (gltf) => {
+gltfLoader.load('/models_compressed/vinil/discovinilo.gltf', (gltf) => {
     vinilo = gltf.scene
     vinilo.scale.set(6.5, 6.5, 6.5)
 
@@ -248,7 +248,7 @@ let personaje2 = null
 //Fiona Apple
 
 gltfLoader.load(
-    '/models/personaje/Personaje3.glb',
+    '/models_compressed/personaje/Personaje3_draco.glb',
     (gltf) =>
     {
         gltf.scene.scale.set(2, 2, 2)
@@ -264,7 +264,7 @@ gltfLoader.load(
 //Alex Turner
 
 gltfLoader.load(
-    '/models/personaje/personaje2.glb',
+    '/models_compressed/personaje/personaje2_draco.glb',
     (gltf) =>
     {
         gltf.scene.scale.set(2, 2, 2)
