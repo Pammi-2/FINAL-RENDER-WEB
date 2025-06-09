@@ -160,7 +160,7 @@ let tocadiscosFinal = null;
 
 let close = null;
 
-gltfLoader.load('/models/tocadiscos/tocadiscosclose.gltf', (gltf) => {
+gltfLoader.load('/models/tocadiscos/tocadiscosclose.glb', (gltf) => {
     gltf.scene.scale.set(6.5, 6.5, 6.5)
     gltf.scene.position.y = 5
     tocadiscosClose = gltf.scene
